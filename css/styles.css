@@ -165,8 +165,9 @@ a {
   line-height: 100%;
 }
 
-/*@import url("https://fonts.googleapis.com/css2?family=Noto+Sans:wght@100&display=swap");
-:root {
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans:wght@100&display=swap");
+
+/*:root {
   font-family: "Noto Sans", sans-serif;
   --del: 0s;
   --dist: 3em;
