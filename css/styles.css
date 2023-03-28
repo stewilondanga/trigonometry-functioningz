@@ -226,12 +226,12 @@ h1 {
   translate: 0 calc(cos(var(--angl)) * var(--dist));
 }
 
-/*.sin.y .pt {
+.sin.y .pt {
   animation: none;
   translate: 0 calc(sin(var(--angl)) * var(--dist));
 }
 
-@keyframes movcos {
+/*@keyframes movcos {
   from {
     translate: 0 calc(-1 * var(--dist));
   }
