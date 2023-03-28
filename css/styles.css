@@ -231,14 +231,16 @@ h1 {
   translate: 0 calc(sin(var(--angl)) * var(--dist));
 }
 
-/*@keyframes movcos {
+@keyframes movcos {
   from {
     translate: 0 calc(-1 * var(--dist));
   }
+
   to {
     translate: 0 calc(1 * var(--dist));
   }
 }
+
 /*
  .cos .pt:nth-of-type(1){
    --del: calc(cos(var(--angl)) * 1s);
@@ -430,5 +432,3 @@ h1 {
 .y .pt:nth-of-type(12) {
   --angl: 12 * 360deg / 12;
 }
-
-*/
