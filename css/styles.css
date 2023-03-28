@@ -167,13 +167,14 @@ a {
 
 @import url("https://fonts.googleapis.com/css2?family=Noto+Sans:wght@100&display=swap");
 
-/*:root {
+:root {
   font-family: "Noto Sans", sans-serif;
   --del: 0s;
   --dist: 3em;
   --angl: 315deg;
 }
 
+/*
 * {
   margin: 0;
   box-sizing: border-box;
