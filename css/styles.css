@@ -1,4 +1,4 @@
-@import url(https://fonts.googleapis.com/css?family=Roboto+Condensed);
+/*@import url(https://fonts.googleapis.com/css?family=Roboto+Condensed);
 
 .share__icon {
   width: 32px;
@@ -165,3 +165,265 @@ a {
   padding: 0 2px;
   line-height: 100%;
 }
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans:wght@100&display=swap");
+:root {
+  font-family: "Noto Sans", sans-serif;
+  --del: 0s;
+  --dist: 3em;
+  --angl: 315deg;
+}
+
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  display: grid;
+  place-content: center;
+  gap: 5em;
+  background: #1f2020;
+  color: #ccf2ff;
+  font-size: 1.2rem;
+}
+
+h1 {
+  font-weight: 100;
+  text-align: center;
+}
+
+.lin {
+  display: flex;
+  gap: 1em;
+  background-image: linear-gradient(#0000 49%, #ff8c66 48%, #ff6633 52%, #0000 0);
+  position: relative;
+  align-items: center;
+}
+
+.pt {
+  background-color: #3cf;
+  width: 2em;
+  height: 0.2em;
+  border-radius: 100vmax;
+  animation: mov 2s linear var(--del) infinite alternate;
+  translate: 0 calc(-1 * var(--dist));
+}
+
+@keyframes mov {
+  from {
+    translate: 0 calc(-1 * var(--dist));
+  }
+  to {
+    translate: 0 calc(1 * var(--dist));
+  }
+}
+.cos.y .pt {
+  animation: none;
+  translate: 0 calc(cos(var(--angl)) * var(--dist));
+}
+
+.sin.y .pt {
+  animation: none;
+  translate: 0 calc(sin(var(--angl)) * var(--dist));
+}
+
+@keyframes movcos {
+  from {
+    translate: 0 calc(-1 * var(--dist));
+  }
+  to {
+    translate: 0 calc(1 * var(--dist));
+  }
+}
+/*
+ .cos .pt:nth-of-type(1){
+   --del: calc(cos(var(--angl)) * 1s);
+ }
+ .sin .pt:nth-of-type(1){
+   --del: calc(sin(var(--angl)) * 1s);
+ }
+ */
+.pt:nth-of-type(1) {
+  --del: calc(var(--func) * 1s);
+}
+
+.y .pt:nth-of-type(1) {
+  --angl: 1 * 360deg / 12;
+}
+
+/*
+ .cos .pt:nth-of-type(2){
+   --del: calc(cos(var(--angl)) * 2s);
+ }
+ .sin .pt:nth-of-type(2){
+   --del: calc(sin(var(--angl)) * 2s);
+ }
+ */
+.pt:nth-of-type(2) {
+  --del: calc(var(--func) * 2s);
+}
+
+.y .pt:nth-of-type(2) {
+  --angl: 2 * 360deg / 12;
+}
+
+/*
+ .cos .pt:nth-of-type(3){
+   --del: calc(cos(var(--angl)) * 3s);
+ }
+ .sin .pt:nth-of-type(3){
+   --del: calc(sin(var(--angl)) * 3s);
+ }
+ */
+.pt:nth-of-type(3) {
+  --del: calc(var(--func) * 3s);
+}
+
+.y .pt:nth-of-type(3) {
+  --angl: 3 * 360deg / 12;
+}
+
+/*
+ .cos .pt:nth-of-type(4){
+   --del: calc(cos(var(--angl)) * 4s);
+ }
+ .sin .pt:nth-of-type(4){
+   --del: calc(sin(var(--angl)) * 4s);
+ }
+ */
+.pt:nth-of-type(4) {
+  --del: calc(var(--func) * 4s);
+}
+
+.y .pt:nth-of-type(4) {
+  --angl: 4 * 360deg / 12;
+}
+
+/*
+ .cos .pt:nth-of-type(5){
+   --del: calc(cos(var(--angl)) * 5s);
+ }
+ .sin .pt:nth-of-type(5){
+   --del: calc(sin(var(--angl)) * 5s);
+ }
+ */
+.pt:nth-of-type(5) {
+  --del: calc(var(--func) * 5s);
+}
+
+.y .pt:nth-of-type(5) {
+  --angl: 5 * 360deg / 12;
+}
+
+/*
+ .cos .pt:nth-of-type(6){
+   --del: calc(cos(var(--angl)) * 6s);
+ }
+ .sin .pt:nth-of-type(6){
+   --del: calc(sin(var(--angl)) * 6s);
+ }
+ */
+.pt:nth-of-type(6) {
+  --del: calc(var(--func) * 6s);
+}
+
+.y .pt:nth-of-type(6) {
+  --angl: 6 * 360deg / 12;
+}
+
+/*
+ .cos .pt:nth-of-type(7){
+   --del: calc(cos(var(--angl)) * 7s);
+ }
+ .sin .pt:nth-of-type(7){
+   --del: calc(sin(var(--angl)) * 7s);
+ }
+ */
+.pt:nth-of-type(7) {
+  --del: calc(var(--func) * 7s);
+}
+
+.y .pt:nth-of-type(7) {
+  --angl: 7 * 360deg / 12;
+}
+
+/*
+ .cos .pt:nth-of-type(8){
+   --del: calc(cos(var(--angl)) * 8s);
+ }
+ .sin .pt:nth-of-type(8){
+   --del: calc(sin(var(--angl)) * 8s);
+ }
+ */
+.pt:nth-of-type(8) {
+  --del: calc(var(--func) * 8s);
+}
+
+.y .pt:nth-of-type(8) {
+  --angl: 8 * 360deg / 12;
+}
+
+/*
+ .cos .pt:nth-of-type(9){
+   --del: calc(cos(var(--angl)) * 9s);
+ }
+ .sin .pt:nth-of-type(9){
+   --del: calc(sin(var(--angl)) * 9s);
+ }
+ */
+.pt:nth-of-type(9) {
+  --del: calc(var(--func) * 9s);
+}
+
+.y .pt:nth-of-type(9) {
+  --angl: 9 * 360deg / 12;
+}
+
+/*
+ .cos .pt:nth-of-type(10){
+   --del: calc(cos(var(--angl)) * 10s);
+ }
+ .sin .pt:nth-of-type(10){
+   --del: calc(sin(var(--angl)) * 10s);
+ }
+ */
+.pt:nth-of-type(10) {
+  --del: calc(var(--func) * 10s);
+}
+
+.y .pt:nth-of-type(10) {
+  --angl: 10 * 360deg / 12;
+}
+
+/*
+ .cos .pt:nth-of-type(11){
+   --del: calc(cos(var(--angl)) * 11s);
+ }
+ .sin .pt:nth-of-type(11){
+   --del: calc(sin(var(--angl)) * 11s);
+ }
+ */
+.pt:nth-of-type(11) {
+  --del: calc(var(--func) * 11s);
+}
+
+.y .pt:nth-of-type(11) {
+  --angl: 11 * 360deg / 12;
+}
+
+/*
+ .cos .pt:nth-of-type(12){
+   --del: calc(cos(var(--angl)) * 12s);
+ }
+ .sin .pt:nth-of-type(12){
+   --del: calc(sin(var(--angl)) * 12s);
+ }
+ */
+.pt:nth-of-type(12) {
+  --del: calc(var(--func) * 12s);
+}
+
+.y .pt:nth-of-type(12) {
+  --angl: 12 * 360deg / 12;
+}*/
