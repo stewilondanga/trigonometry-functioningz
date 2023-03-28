@@ -211,15 +211,17 @@ h1 {
   translate: 0 calc(-1 * var(--dist));
 }
 
-/*@keyframes mov {
+@keyframes mov {
   from {
     translate: 0 calc(-1 * var(--dist));
   }
+
   to {
     translate: 0 calc(1 * var(--dist));
   }
 }
-.cos.y .pt {
+
+/*.cos.y .pt {
   animation: none;
   translate: 0 calc(cos(var(--angl)) * var(--dist));
 }
