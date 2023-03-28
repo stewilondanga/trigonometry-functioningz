@@ -202,7 +202,7 @@ h1 {
   align-items: center;
 }
 
-/*.pt {
+.pt {
   background-color: #3cf;
   width: 2em;
   height: 0.2em;
@@ -211,7 +211,7 @@ h1 {
   translate: 0 calc(-1 * var(--dist));
 }
 
-@keyframes mov {
+/*@keyframes mov {
   from {
     translate: 0 calc(-1 * var(--dist));
   }
