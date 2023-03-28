@@ -221,12 +221,12 @@ h1 {
   }
 }
 
-/*.cos.y .pt {
+.cos.y .pt {
   animation: none;
   translate: 0 calc(cos(var(--angl)) * var(--dist));
 }
 
-.sin.y .pt {
+/*.sin.y .pt {
   animation: none;
   translate: 0 calc(sin(var(--angl)) * var(--dist));
 }
